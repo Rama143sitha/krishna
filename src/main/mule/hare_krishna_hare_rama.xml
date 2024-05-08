@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	<import doc:name="Import" doc:id="92d9a0fc-6e75-4f6a-baac-24f8213087f3" file="C:\Users\SHWENS\AnypointStudio\studio-workspace\sreerama_sreekrishna\src\main\mule" />
+	<flow name="hare_krishna_hare_ramaFlow" doc:id="d82fb668-1a01-4018-88aa-976d4d98a049" >
+		<scheduler doc:name="Scheduler" doc:id="a0985efc-5124-4bd2-b63c-3be10bb80299" >
+			<scheduling-strategy >
+				<fixed-frequency />
+			</scheduling-strategy>
+		</scheduler>
+		<flow-ref doc:name="Flow Reference" doc:id="687ee835-ca90-42ba-8125-74fb0bd9b14c" name="hare_krishna_hare_ramaFlow"/>
+	</flow>
+</mule>
